@@ -126,7 +126,7 @@ void cadastrar()
         gets(compELE[indice].fornecedor);
         printf("Quantidade do Componente Eletronico:");
         scanf("%i%*c", &compELE[indice].quantidade);
-        printf("Preï¿½o unitario do Componente Eletronico:");
+        printf("Preço unitario do Componente Eletronico:");
         scanf("%f%*c", &compELE[indice].precoUnit);
         compELE[indice].precoTotal = compELE[indice].precoUnit * compELE[indice].quantidade;
         printf("\nCodigo gerado: %i", compELE[indice].codigo);
@@ -150,10 +150,10 @@ void visualizar()
 
     if (indice > 0)
     {
-        printf("\nOpï¿½ï¿½es de visualizaï¿½ï¿½o: ");
+        printf("\nOpções de visualização: ");
         printf("\n1 - Crescente ");
         printf("\n2 - Decrescente \n");
-        printf("\nDigite a opï¿½ï¿½o de visualizaï¿½ï¿½o: ");
+        printf("\nDigite a opção de visualização: ");
         scanf("%i%*c", &opcao);
 
         switch (opcao)
@@ -169,13 +169,13 @@ void visualizar()
             exibeCampos(codigo, opcao);
             break;
         default:
-            printf("Digite uma opï¿½ï¿½o vï¿½lida \n\n");
+            printf("Digite uma opição válida \n\n");
             break;
         }
     }
     else
     {
-        printf("Nï¿½o hï¿½ componentes cadastrados\n ");
+        printf("Número do componentes cadastrados\n ");
     }
 }
 
@@ -197,12 +197,12 @@ void pesquisar()
         
         if (achou == 0)
         {
-            printf("Nï¿½o hï¿½ produtos cadastrados com esse codigo \n\n");
+            printf("Número do produtos cadastrados com esse codigo \n\n");
         }
     }
     else
     {
-        printf("Nï¿½o hï¿½ componentes cadastrados\n\n");
+        printf("Número do componentes cadastrados\n\n");
     }
 }
 
@@ -215,14 +215,14 @@ void alterar()
     
     lerArq();
     
-    printf("==== Alteraï¿½ï¿½o de componentes eletronicos ====\n");
+    printf("==== Alteração de componentes eletronicos ====\n");
     if (indice > 0)
     {
         printf("\nDigite o codigo do Componente Eletronico:");
         scanf("%i", &codigo);
 
         system("cls");
-        printf("==== Alteraï¿½ï¿½o de componentes eletronicos ====\n");
+        printf("==== Alteração de componentes eletronicos ====\n");
 
         achou = exibeCampos(codigo, opcao);
 
@@ -240,7 +240,7 @@ void alterar()
                 gets(compELE[i].fornecedor);
                 printf("Quantidade do Componente Eletronico:");
                 scanf("%i%*c", &compELE[i].quantidade);
-                printf("Preï¿½o unitario do Componente Eletronico:");
+                printf("Preço unitario do Componente Eletronico:");
                 scanf("%f%*c", &compELE[i].precoUnit);
                 
                 abreArq('g');
@@ -251,20 +251,20 @@ void alterar()
 
                 printf("\nItem alterado com sucesso \n\n");
             }else if(opcao == 'N' || opcao == 'n'){
-                printf("\nComponente nï¿½o foi alterado\n\n");
+                printf("\nComponente não foi alterado\n\n");
             }
             else{
-                printf("\nDigite uma opï¿½ï¿½o vï¿½lida \n\n");
+                printf("\nDigite uma opição válida \n\n");
             }
         }
         else
         {
-            printf("Nï¿½o hï¿½ produtos cadastrados com esse codigo \n\n");
+            printf("Números dos produtos cadastrados com esse codigo \n\n");
         }
     }
     else
     {
-        printf("Nï¿½o hï¿½ componentes cadastrados \n\n");
+        printf("Números dos componentes cadastrados \n\n");
     }
     fclose(arquivo);
 }
@@ -275,14 +275,14 @@ void excluir()
     char opcao;
 
     system("cls");
-    printf("==== Exclusï¿½o de componentes eletronicos ====\n");
+    printf("==== Exclusão de componentes eletronicos ====\n");
     if (indice > 0)
     {
         printf("\nDigite o codigo do Componente Eletronico:");
         scanf("%i", &codigo);
 
         system("cls");
-        printf("==== Exclusï¿½o de componentes eletronicos ====\n");
+        printf("==== Exclusão de componentes eletronicos ====\n");
         achou = exibeCampos(codigo, opcao);
 
         if (achou == 1)
@@ -306,17 +306,17 @@ void excluir()
             }
             else
             {
-               printf("\nComponente nï¿½o excluido \n\n");
+               printf("\nComponente não excluido \n\n");
             }
         }
         else
         {
-        	printf("Nï¿½o hï¿½ produtos cadastrados com esse codigo\n\n ");
+        	printf("Numero dos produtos cadastrados com esse codigo\n\n ");
         }
     }
     else
     {
-        printf("Nï¿½o hï¿½ componentes cadastrados\n\n ");
+        printf("Números dos componentes cadastrados\n\n ");
     }
     fclose(arquivo);
 }
@@ -375,8 +375,8 @@ int exibeCampos(int codigo, int opcao)
                 printf("\nFornecedor do Componente Eletronico: %s", compELE[i].fornecedor);
                 printf("\nCodigo: %i", compELE[i].codigo);
                 printf("\nQuantidade: %i", compELE[i].quantidade);
-                printf("\nPreï¿½o unitario: R$%0.2f", compELE[i].precoUnit);
-                printf("\nPreï¿½o total do estoque: R$%0.2f\n\n", compELE[i].precoTotal);
+                printf("\nPreço unitario: R$%0.2f", compELE[i].precoUnit);
+                printf("\nPreço total do estoque: R$%0.2f\n\n", compELE[i].precoTotal);
                 printf("\n=======================================\n");
             }
         }
@@ -389,8 +389,8 @@ int exibeCampos(int codigo, int opcao)
                 printf("\nFornecedor do Componente Eletronico: %s", compELE[i].fornecedor);
                 printf("\nCodigo: %i", compELE[i].codigo);
                 printf("\nQuantidade: %i", compELE[i].quantidade);
-                printf("\nPreï¿½o unitario: R$%0.2f", compELE[i].precoUnit);
-                printf("\nPreï¿½o total do estoque: R$%0.2f", compELE[i].precoTotal);
+                printf("\nPreço unitario: R$%0.2f", compELE[i].precoUnit);
+                printf("\nPreço total do estoque: R$%0.2f", compELE[i].precoTotal);
                 printf("\n=======================================\n");
             }
         }
@@ -406,8 +406,8 @@ int exibeCampos(int codigo, int opcao)
                 printf("\nFornecedor do Componente Eletronico: %s", compELE[i].fornecedor);
                 printf("\nCodigo: %i", compELE[i].codigo);
                 printf("\nQuantidade: %i", compELE[i].quantidade);
-                printf("\nPreï¿½o unitario: R$%0.2f", compELE[i].precoUnit);
-                printf("\nPreï¿½o total do estoque: R$%0.2f", compELE[i].precoTotal);
+                printf("\nPreço unitario: R$%0.2f", compELE[i].precoUnit);
+                printf("\nPreço total do estoque: R$%0.2f", compELE[i].precoTotal);
                 achou = 1;
                 break;
             }
