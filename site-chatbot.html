@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de site bonito</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Cor de fundo do site */
+        body {
+            background-color: #f0f0f0;
+        }
+
+        /* Estilo do cabeçalho */
+        .header {
+            padding: 20px;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Estilo do título */
+        .header h1 {
+            font-size: 40px;
+        }
+
+        /* Estilo do subtítulo */
+        .header p {
+            font-size: 20px;
+        }
+
+        /* Estilo do conteúdo */
+        
+        .content {
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Estilo das imagens */
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Estilo dos ícones */
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        /* Cor dos ícones */
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Exemplo de site bonito</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+
+    <!-- Cabeçalho do site -->
+    <div class="header">
+        <h1>Exemplo de site bonito</h1>
+        <p>Este é um site que eu criei para mostrar o meu código.</p>
+    </div>
+
+    <!-- Conteúdo do site -->
+    <div class="content">
+        <!-- Primeira linha com duas colunas -->
+        <div class="row">
+            <!-- Primeira coluna com uma imagem -->
+            <div class="col-md-6">
+                <img src="https://picsum.photos/500/300" alt="Imagem aleatória" class="img-fluid">
+            </div>
+            <!-- Segunda coluna com um texto -->
+            <div class="col-md-6">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo quis lorem aliquet ultrices. Mauris vitae lacus quis magna tincidunt sagittis. Fusce vitae nisi id augue tincidunt lacinia. Morbi id nisl ut leo ullamcorper blandit. Donec et eros vitae leo consequat malesuada. Suspendisse potenti. Duis eget lorem sed justo feugiat sollicitudin.</p>
+                <p>Quisque quis nisl ut nisi faucibus malesuada. Sed id sapien id massa tincidunt rhoncus. Cras at nisl sit amet velit lobortis consequat. Curabitur quis semper eros. Sed nec massa vitae lectus luctus aliquam.</p>
+                <!-- Ícones das redes sociais -->
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+
+        <!-- Segunda linha com duas colunas -->
+        <div class="row">
+            <!-- Primeira coluna com um texto -->
+            <div class="col-md-6">
+                <h2>Curabitur quis semper eros</h2>
+                <p>Curabitur quis semper eros. Sed nec massa vitae lectus luctus aliquam. Quisque quis nisl ut nisi faucibus malesuada. Sed id sapien id massa tincidunt rhoncus. Cras at nisl sit amet velit lobortis consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo quis lorem aliquet ultrices. Mauris vitae lacus quis magna tincidunt sagittis. Fusce vitae nisi id augue tincidunt lacinia. Morbi id nisl ut leo ullamcorper blandit. Donec et eros vitae leo consequat malesuada. Suspendisse potenti. Duis eget lorem sed justo feugiat sollicitudin.</p>
+                <!-- Ícones das redes sociais -->
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <!-- Segunda coluna com uma imagem -->
+            <div class="col-md-6">
+                <img src="https://picsum.photos/500/300" alt="Imagem aleatória" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Rodapé do site -->
+        <div class="footer">
+            <p>Este foi criado pelo chatbot Bing para demonstrar o seu código.</p>
+        </div>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
